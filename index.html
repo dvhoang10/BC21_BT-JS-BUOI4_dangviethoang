@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container pt-5">
+      <h1 class="text-center">Bài tập</h1>
+      <!-- quan ly sinh vien -->
+      <div class="bt1 pt-5">
+        <h3>1. Quản lý tuyển sinh</h3>
+        <div id="bt1-alert" class="alert alert-success mt-3" role="alert"></div>
+        <div class="form-group">
+          <label for="">Nhập điểm chuẩn của hội đồng</label>
+          <input
+            type="text"
+            name=""
+            id="txt-official-score"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+          <label for="">Nhập điểm Toán</label>
+          <input
+            type="text"
+            name="array1[]"
+            id=""
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+          <label for="">Nhập điểm Văn</label>
+          <input
+            type="text"
+            name="array1[]"
+            id=""
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+          <label for="">Nhập điểm Tiếng Anh</label>
+          <input
+            type="text"
+            name="array1[]"
+            id=""
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >Khu vực</label
+            >
+          </div>
+          <select name="array1[]" class="custom-select" id="inputGroupSelect01">
+            <option value="1">A</option>
+            <option value="2">B</option>
+            <option value="3">C</option>
+          </select>
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect02"
+              >Đối tượng</label
+            >
+          </div>
+          <select name="array1[]" class="custom-select" id="inputGroupSelect02">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <button class="btn btn-success float-right" onclick="bt1_show()">
+          Kiểm tra
+        </button>
+      </div>
+      <div class="bt2 pt-5">
+        <h3>2. Tính tiền điện</h3>
+        <div id="bt2-alert" class="alert alert-success mt-3" role="alert"></div>
+        <div class="form-group">
+          <label for="">Nhập tên chủ hộ</label>
+          <input
+            type="text"
+            name="array2[]"
+            id=""
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+          <label for="">Nhập số kw</label>
+          <input
+            type="text"
+            name="array2[]"
+            id=""
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <button class="btn btn-success float-right" onclick="bt2_show()">
+          Kiểm tra
+        </button>
+      </div>
+      <div class="bt3 pt-5">
+        <h3>3. Tính thuế thu nhập cá nhân</h3>
+        <div id="bt3-alert" class="alert alert-success mt-3" role="alert"></div>
+        <div class="form-group">
+          <label for="">Nhập họ tên</label>
+          <input
+            type="text"
+            name="array3[]"
+            id=""
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+          <label for="">Nhập tổng thu nhập năm</label>
+          <input
+            type="text"
+            name="array3[]"
+            id=""
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+          <label for="">Nhập số người phụ thuộc</label>
+          <input
+            type="text"
+            name="array3[]"
+            id=""
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <button class="btn btn-success float-right" onclick="bt3_show()">
+          Kiểm tra
+        </button>
+      </div>
+      <div class="bt4 pt-5">
+        <h3>4. Tính tiền cáp</h3>
+        <div id="bt4-alert" class="alert alert-success mt-3" role="alert"></div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect03"
+              >Loại khách hàng</label
+            >
+          </div>
+          <select name="array4[]" class="custom-select" id="txt-type-customer">
+            <option value="1">Nhà dân</option>
+            <option value="2">Doanh nghiệp</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="">Nhập mã khách hàng</label>
+          <input
+            type="text"
+            name="array4[]"
+            id=""
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+          <label for="">Nhập số kết nối</label>
+          <input
+            type="text"
+            name="array4[]"
+            id="txt-connect"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+            value="1"
+            disabled
+          />
+          <label for="">Nhập số kênh cao cấp</label>
+          <input
+            type="text"
+            name="array4[]"
+            id=""
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <button class="btn btn-success float-right" onclick="bt4_show()">
+          Kiểm tra
+        </button>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/bt1.js"></script>
+    <script src="./js/bt2.js"></script>
+    <script src="./js/bt3.js"></script>
+    <script src="./js/bt4.js"></script>
+  </body>
+</html>
