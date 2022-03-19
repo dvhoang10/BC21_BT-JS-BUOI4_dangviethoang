@@ -44,7 +44,6 @@ function checkTax(n) {
 
 function calculateTax(array) {
   var income = array[0].getIncomeTax();
-  console.log(income);
   var to60 = checkTax(1),
     from61to120 = checkTax(2),
     from121to210 = checkTax(3),
@@ -73,7 +72,6 @@ function calculateTax(array) {
   if (income > 960 * n) {
     sum += (income - 960 * n) * (from961 - from625to960);
   }
-  console.log(sum);
   document.getElementById("bt3-alert").style.display = "block";
   document.getElementById(
     "bt3-alert"
